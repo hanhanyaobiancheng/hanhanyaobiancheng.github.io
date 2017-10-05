@@ -7,8 +7,8 @@
 	<!-- /*ie浏览器升级以后，比如ie9浏览器，但是文档模式却是ie8，所以需要加上面的代码，后边的chrome=1是当用户装了谷歌内嵌浏览器框架GCF后就可以用webkit及V8引擎进行排版及运算，如果没装插件就会让IE以最高的文档模式展现效果*/ -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keyword" content="index">
-	<link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
 	<title>欢欢&寒寒</title>
 </head>
 <body>
@@ -30,67 +30,36 @@
      		<div class="rol">
 	     		    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 	     		    	<video id="d1" controls="" autoplay="" loop="">
-			                <source src="375232352.mp4" type='video/mp4'/>
+			                <source src="./video/375232352.mp4" type='video/mp4'/>
 			                您的浏览器不支持video元素
 			        </video>
 				    <p>2017年4月28日晚，林寒混蛋，居然当着欢宝宝的面看别的女人，怎么着也得偷偷的看啊，太不要脸了，太不把欢宝宝当回事儿了，该死</P>
 	     		    </div>
      			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-5" id="d2">
-	     				<h2>简单介绍</h2>
-	     				<div>
-	     				    <h4>个人基本情况</h4>
-	     				    <p>姓名：<b>陈欢欢</b></p>
-			                <h4>2016年6月18号</h4>
-			                在北京遇见了你，一个值得我用一生去呵护的人。至今依然记得第一次见你的场景</br>
-			            </div>
-			            <hr/>
-			            <div>
-			                <h4>相识相知的2016-2017</h4>
-			                我们<b>相识在北京</b>，从<b>五道口</b>逛到<b>王府井</b>。</br>
-			                <h4>走过的路，看过的风景</h4>
-			                <p>逛过鸟巢，去过国家博物馆<b>龙庆峡</b>
-			                去过世贸天阶、798、蓝色港湾；从颐和园到清华再到北大，从新奥到海淀剧院，从后海到天安门再到南锣鼓巷，我牵着你的手基本走遍北京的大街小巷。从九头鹰到花园饭店，想吃遍京城的大街小巷。</p>
-			                <h4>未来想与你走更多的路看更多的风景</h4>
-			            </div>
-			            <div>
-			            	<h4>北京时间</h4> 
-							    <input type="text" id="sj" size="31px" text-align:"center" disabled="">
-								<script>
-								function jsq(){
-									var time=new Date();
-									var year=time.getFullYear();
-									var month=time.getMonth()+1;
-									var day=time.getDate();
-									var hours=time.getHours();
-									var minutes=time.getMinutes();
-							        var seconds=time.getSeconds();
-							        var str='现在是：'
-							        str+=year+'年'+month+'月'+day+'日'+hours+'时'+minutes+'分'+seconds+'秒';
-							        var clock=document.getElementById('sj');
-							        clock.value=str;
-							        }
-							        setInterval("jsq()",1000)
-								</script>
-
-							    <!-- 距下一年元旦的倒计时 -->
-							    <h4>距下一年元旦倒计时</h4>
-							    <input type="text" id="djs" size="31px" disabled=""><hr>
-
-							    <script>
-							    function djs(){
-							        var now=new Date();
-							        var newYear=new Date(now.getFullYear()+1,0,1,8,15,16);
-							        var days=parseInt((newYear-now)/86400000);
-							        var hour=(newYear-now)/86400000-parseInt((newYear-now)/86400000);
-							        var minute=hour*24-parseInt(hour*24);
-							        var second=minute*60-parseInt(minute*60);
-							        var str1="离欢欢生日"+"还有"+days+"天"+parseInt(hour*24)+"小时"+parseInt(minute*60)+"分钟"+parseInt(second*60)+"秒";
-							        var xndjs=document.getElementById('djs');
-							        xndjs.value=str1; 
-							        }
-							        setInterval("djs()",1000)
-							    </script>
+     				<h2>简单介绍</h2>
+     				<div>
+     				    <h4>个人基本情况</h4>
+     				    <p>姓名：<b>陈欢欢</b></p>
+		                <h4>2016年6月18号</h4>
+		                在北京遇见了你，一个值得我用一生去呵护的人。至今依然记得第一次见你的场景</br>
 		            </div>
+		            <hr/>
+		            <div>
+		                <h4>相识相知的2016-2017</h4>
+		                我们<b>相识在北京</b>，从<b>五道口</b>逛到<b>王府井</b>。</br>
+		                <h4>走过的路，看过的风景</h4>
+		                <p>逛过鸟巢，去过国家博物馆<b>龙庆峡</b>
+		                去过世贸天阶、798、蓝色港湾；从颐和园到清华再到北大，从新奥到海淀剧院，从后海到天安门再到南锣鼓巷，我牵着你的手基本走遍北京的大街小巷。从九头鹰到花园饭店，想吃遍京城的大街小巷。</p>
+		                <h4>未来想与你走更多的路看更多的风景</h4>
+		            </div>
+		            <div>
+		            	<h4>北京时间</h4> 
+						<input type="text" id="sj" size="31px" text-align:"center" disabled="">
+
+					    <!-- 距下一年元旦的倒计时 -->
+					    <h4>距下一年元旦倒计时</h4>
+					    <input type="text" id="djs" size="31px" disabled=""><hr>
+	            	</div>
      			</div>
      			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
      				<img src="images/DSC00543.JPG" alt="" id="tp"><br><br>
@@ -99,5 +68,6 @@
      		</div>
      	</div>
      </section>
+     <script src="./js/index.js"></script>
 </body>
 </html>
