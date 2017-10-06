@@ -25,3 +25,4 @@ function djs(){
     xndjs.value=str1; 
     }
 setInterval("djs()",1000);
+
