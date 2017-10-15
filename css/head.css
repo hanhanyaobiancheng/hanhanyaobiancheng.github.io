@@ -22,3 +22,17 @@
 	transform: translateY(0);
 	opacity: 1;
 }
+
+/* section部分公共样式*/
+section {
+	margin-top: 80px;
+}
+
+.theme-header {
+	font: 1.3em 楷体 bold;
+	color: #398439;
+	margin-left: 80px;
+	border-left: 5px solid #5cb85c;
+	margin-bottom: 20px;
+}
+
